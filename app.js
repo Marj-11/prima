@@ -1,5 +1,4 @@
 const list = document.querySelectorAll('.listChild');
-console.log(window.location.href);
 
 if (window.location.href === `${window.origin}/prima/`) {
     list[0].classList.add('white');
