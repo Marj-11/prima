@@ -1,4 +1,5 @@
 const list = document.querySelectorAll('.listChild');
+console.log(window.origin);
 
 if (window.location.href === `${window.origin}/home/`) {
     list[0].classList.add('white');
