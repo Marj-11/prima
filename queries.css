@@ -1,0 +1,177 @@
+/* Big screens to 1900px */
+
+@media only screen and (max-width: 2200px) {}
+
+
+/* Big screens to 1500px */
+
+@media only screen and (max-width: 1500px) {
+    .first_main {
+        margin-top: 15%;
+    }
+    .text {
+        margin-top: 30px;
+    }
+    .main-email {
+        margin-top: 10%;
+    }
+    .über {
+        width: 70%;
+        font-size: 18px;
+        width: 30%;
+    }
+}
+
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+
+@media only screen and (max-width: 1200px) {
+    .first_main {
+        margin-top: 15%;
+    }
+    .text {
+        margin-top: 20px;
+    }
+    .main-email {
+        margin-top: 10%;
+    }
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+    .first_main {
+        grid-gap: 15px;
+        text-align: center;
+    }
+    .container {
+        background-image: none;
+    }
+    .über {
+        width: 70%;
+        margin-top: 10%;
+    }
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+    .burger {
+        cursor: pointer;
+        width: 50px;
+    }
+    .burger span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 8px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        position: relative;
+        top: 0;
+        z-index: 2;
+        transition: all .3s ease-in-out;
+    }
+    .burger.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .burger.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 10px;
+    }
+    .burger.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -10px;
+    }
+    .list {
+        display: none;
+    }
+    @keyframes anim {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .list li {
+        width: 40%;
+    }
+    #bar:checked~.list {
+        position: absolute;
+        top: 0;
+        display: flex;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(20, 20, 20, 0.9);
+        height: 240px;
+        animation: anim .5s forwards;
+        -webkit-animation: anim .5s forwards;
+    }
+    .first_main {
+        margin-top: 15%;
+        grid-gap: 15px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "die_prima" "aufgedonnat" "uber";
+        text-align: center;
+    }
+    /* .die_prima {}
+    .aufgedonnat {} */
+    /* .text {} */
+    .über {
+        width: 70%;
+        font-size: 18px;
+    }
+}
+
+
+/* Small phones: from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+    .first_main {
+        height: 80%;
+        grid-gap: 35px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "die_prima" "aufgedonnat" "uber";
+    }
+    /* .die_prima {} */
+    .aufgedonnat {
+        transform: translateX(50px);
+    }
+    @keyframes aufGedonna {
+        0% {
+            opacity: 0;
+            transform: translateX(0);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(50px);
+            -webkit-transform: translateX(50px);
+            -moz-transform: translateX(50px);
+            -ms-transform: translateX(50px);
+            -o-transform: translateX(50px);
+        }
+    }
+    .text {
+        padding: 0;
+        text-align: center;
+    }
+    .main-email {
+        margin-top: 30%;
+        font-size: 15px;
+    }
+    .termin1 {
+        width: 65%;
+    }
+    .termin2 {
+        width: 65%;
+    }
+    .über {
+        font-size: 14px;
+    }
+}
