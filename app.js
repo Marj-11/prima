@@ -1,19 +1,19 @@
 const list = document.querySelectorAll('.listChild');
-console.log(window.origin);
+console.log(window.location.href);
 
-if (window.location.href === `${window.origin}/home/`) {
+if (window.location.href === `${window.origin}/prima/home/`) {
     list[0].classList.add('white');
 }
-if (window.location.href === `${window.origin}/gallerie/`) {
+if (window.location.href === `${window.origin}/prima/gallerie/`) {
     list[1].classList.add('white');
 }
-if (window.location.href === `${window.origin}/termine/`) {
+if (window.location.href === `${window.origin}/prima/termine/`) {
     list[2].classList.add('white');
 }
-if (window.location.href === `${window.origin}/uber/`) {
+if (window.location.href === `${window.origin}/prima/uber/`) {
     list[3].classList.add('white');
 }
-if (window.location.href === `${window.origin}/kontakt/`) {
+if (window.location.href === `${window.origin}/prima/kontakt/`) {
     list[4].classList.add('white');
 }
 const burger = document.querySelector('.burger');
