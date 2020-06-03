@@ -5,46 +5,17 @@
 
 /* Big screens to 1500px */
 
-@media only screen and (max-width: 1500px) {
-    .first_main {
-        margin-top: 15%;
-    }
-    .text {
-        margin-top: 30px;
-    }
-    .main-email {
-        margin-top: 10%;
-    }
-    .über {
-        width: 70%;
-        font-size: 18px;
-        width: 30%;
-    }
-}
+@media only screen and (max-width: 1500px) {}
 
 
 /* Big tablet to 1200px (widths smaller taht the 1140px row) */
 
-@media only screen and (max-width: 1200px) {
-    .first_main {
-        margin-top: 15%;
-    }
-    .text {
-        margin-top: 20px;
-    }
-    .main-email {
-        margin-top: 10%;
-    }
-}
+@media only screen and (max-width: 1200px) {}
 
 
 /* Small tablet to big tablet: from 768px to 1023px */
 
 @media only screen and (max-width: 1023px) {
-    .first_main {
-        grid-gap: 15px;
-        text-align: center;
-    }
     .container {
         background-image: none;
     }
@@ -113,19 +84,30 @@
         animation: anim .5s forwards;
         -webkit-animation: anim .5s forwards;
     }
-    .first_main {
-        margin-top: 15%;
-        grid-gap: 15px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "die_prima" "aufgedonnat" "uber";
-        text-align: center;
-    }
-    /* .die_prima {}
-    .aufgedonnat {} */
-    /* .text {} */
     .über {
         width: 70%;
         font-size: 18px;
+    }
+    .die_prima {
+        text-align: center;
+        align-self: center;
+    }
+    .aufgedonnat {
+        transform: translateX(50px);
+    }
+    .first_main {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .text {
+        margin-top: 50px;
+        text-align: center;
+        line-height: 25px;
+    }
+    iframe {
+        border: none;
+        width: 420px;
+        height: 345px
     }
 }
 
@@ -133,15 +115,21 @@
 /* Small phones: from 0 to 480px */
 
 @media only screen and (max-width: 480px) {
-    .first_main {
-        height: 80%;
-        grid-gap: 35px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "die_prima" "aufgedonnat" "uber";
+    .die_prima {
+        text-align: center;
+        align-self: center;
     }
-    /* .die_prima {} */
     .aufgedonnat {
         transform: translateX(50px);
+    }
+    .first_main {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .text {
+        margin-top: 50px;
+        text-align: center;
+        line-height: 25px;
     }
     @keyframes aufGedonna {
         0% {
@@ -157,9 +145,11 @@
             -o-transform: translateX(50px);
         }
     }
-    .text {
-        padding: 0;
-        text-align: center;
+    iframe {
+        border: none;
+        width: 320px;
+        height: 145px;
+        margin-top: 180px;
     }
     .main-email {
         margin-top: 30%;
@@ -173,5 +163,13 @@
     }
     .über {
         font-size: 14px;
+    }
+    .main-container {
+        background-attachment: fixed;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/new.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100%;
     }
 }
