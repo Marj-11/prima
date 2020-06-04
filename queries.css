@@ -37,6 +37,12 @@
 /* Small phones to small tablets: from 481px to 767px */
 
 @media only screen and (max-width: 767px) {
+    .main-container {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 50% 40%;
+        min-height: 100%;
+    }
     .burger {
         cursor: pointer;
         width: 50px;
@@ -94,6 +100,7 @@
     }
     .über {
         width: 70%;
+        margin-top: 10px;
         font-size: 18px;
     }
     .die_prima {
@@ -115,7 +122,13 @@
     iframe {
         border: none;
         width: 420px;
-        height: 345px
+        height: 280px;
+    }
+    .main-email {
+        font-size: 25px;
+    }
+    .video {
+        margin-top: 3%;
     }
 }
 
@@ -157,11 +170,9 @@
         border: none;
         width: 320px;
         height: 145px;
-        margin-top: 180px;
     }
     .main-email {
-        margin-top: 30%;
-        font-size: 15px;
+        margin-top: 90%;
     }
     .termin1 {
         width: 65%;
@@ -170,6 +181,11 @@
         width: 65%;
     }
     .über {
-        font-size: 14px;
+        margin-top: 20px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .video {
+        margin-top: 75%;
     }
 }
