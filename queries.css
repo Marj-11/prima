@@ -15,13 +15,21 @@
 
 /* Small tablet to big tablet: from 768px to 1023px */
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
     .container {
         background-image: none;
     }
     .über {
         width: 70%;
         margin-top: 10%;
+    }
+    .main-container {
+        background-attachment: fixed;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/new.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100%;
     }
 }
 
@@ -163,13 +171,5 @@
     }
     .über {
         font-size: 14px;
-    }
-    .main-container {
-        background-attachment: fixed;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/new.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        min-height: 100%;
     }
 }
